@@ -28,7 +28,7 @@ public class HelloWorldControllerTests {
 	
 	@Test
 	public void a1_helloWorldTest() throws Exception {
-		RequestBuilder request = get("/atividades/hello")
+		RequestBuilder request = get("/")
 					.accept(MediaType.TEXT_PLAIN);
 		
 		MvcResult result = mvc.perform(request).andExpect(status().isOk()).andReturn();
